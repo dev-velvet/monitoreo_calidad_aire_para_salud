@@ -245,6 +245,9 @@ def get_riesgo_cruzado(
                     "incremento_historico_base": float(f["porcentaje_incremento_riesgo"])
                 })
 
+            # Ordenar los resultados de mayor a menor riesgo incremental
+            calculos.sort(key=lambda x: x["incremento_riesgo_porcentaje_actual"], reverse=True)
+
             # Compilar nota explicativa
             notas = [n for n in [nota_muni, nota_coef] if n]
             if grupo_edad != grupo_edad_normalizado:
