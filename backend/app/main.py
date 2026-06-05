@@ -24,6 +24,7 @@ app.add_middleware(
         "http://localhost:3000",
         "https://*.lovable.app",  # Wildcard para dominios de Lovable
         "https://lovable.app",
+        "https://airwise-health.onrender.com", # Frontend desplegado en Render
     ],
     allow_credentials=True,
     allow_methods=["*"],
