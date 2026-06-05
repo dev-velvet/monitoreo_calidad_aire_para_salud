@@ -122,32 +122,26 @@ def get_riesgo_cruzado(
 ):
     """
     Calculadora de Riesgo Epidemiológico Cruzado en Tiempo Real (Diferenciador).
-    Busca la estación de SIATA correspondiente al municipio dado, obtiene su PM2.5 actual
-    y calcula el incremento de riesgo relativo con el coeficiente beta histórico.
+    Consulta la vista materializada 'vista_riesgo_integrado' que consolida
+    las tres fuentes (SIATA en vivo + riesgo histórico + enfermedades).
     """
     with get_db() as conn:
         with conn.cursor() as cur:
-            # 1. Obtener el nombre normalizado del municipio
-            cur.execute("SELECT nombre_normalizado FROM municipios WHERE id = %s;", (municipio_id,))
-            mun_res = cur.fetchone()
-            if not mun_res:
-                raise HTTPException(status_code=404, detail="Municipio no encontrado")
-            
-            municipio_nombre = mun_res["nombre_normalizado"]
-            
-            # 2. Buscar la estación SIATA correspondiente al municipio (coincidencia parcial de texto)
-            # Ej: Estación Sabaneta - I.E. Rafael J. Mejía -> LIKE '%Sabaneta%'
-            query_siata = """
-                SELECT DISTINCT ON (estacion) pm25_ica, estacion, categoria_ica
-                FROM mediciones_siata
-                WHERE estacion ILIKE %s AND pm25_ica IS NOT NULL
-                ORDER BY estacion, fecha_hora DESC;
+            query = """
+                SELECT municipio, estacion_siata, pm25_actual, categoria_ica,
+                       ultima_medicion, enfermedad, coeficiente_riesgo,
+                       incremento_basico_historico, incremento_riesgo_pct_actual
+                FROM vista_riesgo_integrado
+                WHERE municipio_id = %s
+                  AND sexo ILIKE %s
+                  AND grupo_edad ILIKE %s
+                ORDER BY incremento_riesgo_pct_actual DESC;
             """
-            cur.execute(query_siata, (f"%{municipio_nombre}%",))
-            siata_res = cur.fetchone()
-            
-            if not siata_res:
-                # Si no hay estación exacta en ese municipio, tomamos el promedio regional como fallback
+            cur.execute(query, (municipio_id, sexo, grupo_edad))
+            filas = cur.fetchall()
+
+            if not filas:
+                # Fallback: promedio regional si no hay datos en la vista
                 query_fallback = """
                     WITH ultimas AS (
                         SELECT DISTINCT ON (estacion) pm25_ica
@@ -159,49 +153,39 @@ def get_riesgo_cruzado(
                 """
                 cur.execute(query_fallback)
                 fallback_res = cur.fetchone()
-                pm25_actual = float(fallback_res["promedio"]) if fallback_res and fallback_res["promedio"] else 0.0
-                estacion_usada = "Promedio Regional (Valle de Aburrá)"
-                categoria_ica = "Moderada" if pm25_actual > 12 else "Buena"
-            else:
-                pm25_actual = float(siata_res["pm25_ica"])
-                estacion_usada = siata_res["estacion"]
-                categoria_ica = siata_res["categoria_ica"]
-                
-            # 3. Consultar coeficientes Beta para el municipio, sexo y grupo de edad especificados
-            query_beta = """
-                SELECT 
-                    gd.nombre as enfermedad, ar.beta, ar.porcentaje_incremento_riesgo as incremento_basico_historico
-                FROM analisis_riesgo ar
-                JOIN grupos_diagnosticos gd ON ar.grupo_diagnostico_id = gd.id
-                JOIN contaminantes c ON ar.contaminante_id = c.id
-                WHERE ar.municipio_id = %s 
-                  AND ar.sexo ILIKE %s 
-                  AND ar.grupo_edad ILIKE %s
-                  AND c.nombre = 'pm25';
-            """
-            cur.execute(query_beta, (municipio_id, sexo, grupo_edad))
-            betas = cur.fetchall()
-            
-            # 4. Calcular el incremento de riesgo personalizado en tiempo real
-            # Formula: Incremento % = (e^(beta * PM25) - 1) * 100
-            import math
-            calculos = []
-            for b in betas:
-                beta_val = float(b["beta"])
-                # Incremento de riesgo relativo según la exposición actual
-                incremento_real = (math.exp(beta_val * pm25_actual) - 1) * 100
-                calculos.append({
-                    "enfermedad": b["enfermedad"],
-                    "beta_historico": beta_val,
-                    "incremento_riesgo_porcentaje_actual": round(incremento_real, 2),
-                    "incremento_historico_base": float(b["incremento_basico_historico"])
-                })
-                
+                pm25_fallback = float(fallback_res["promedio"]) if fallback_res and fallback_res["promedio"] else 0.0
+
+                cur.execute("SELECT nombre_normalizado FROM municipios WHERE id = %s;", (municipio_id,))
+                mun_res = cur.fetchone()
+                if not mun_res:
+                    raise HTTPException(status_code=404, detail="Municipio no encontrado")
+
+                return {
+                    "municipio": mun_res["nombre_normalizado"],
+                    "estacion_monitoreo": "Promedio Regional (Valle de Aburrá)",
+                    "pm25_ica_actual": pm25_fallback,
+                    "categoria_ica": "Moderada" if pm25_fallback > 12 else "Buena",
+                    "sexo_filtro": sexo,
+                    "grupo_edad_filtro": grupo_edad,
+                    "calculos_riesgo": []
+                }
+
+            primera = filas[0]
+            calculos = [
+                {
+                    "enfermedad": f["enfermedad"],
+                    "beta_historico": float(f["coeficiente_riesgo"]),
+                    "incremento_riesgo_porcentaje_actual": float(f["incremento_riesgo_pct_actual"]),
+                    "incremento_historico_base": float(f["incremento_basico_historico"])
+                }
+                for f in filas
+            ]
+
             return {
-                "municipio": municipio_nombre,
-                "estacion_monitoreo": estacion_usada,
-                "pm25_ica_actual": pm25_actual,
-                "categoria_ica": categoria_ica,
+                "municipio": primera["municipio"],
+                "estacion_monitoreo": primera["estacion_siata"],
+                "pm25_ica_actual": float(primera["pm25_actual"]),
+                "categoria_ica": primera["categoria_ica"],
                 "sexo_filtro": sexo,
                 "grupo_edad_filtro": grupo_edad,
                 "calculos_riesgo": calculos

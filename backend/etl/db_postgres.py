@@ -341,6 +341,67 @@ def cargar_defunciones(conn, df, municipios_map, diagnosticos_map):
     cur.close()
     print(f"[OK] Cargada tabla defunciones con {len(df)} registros.")
 
+def crear_vista_datos_integrados(conn):
+    """
+    Crea (si no existe) o refresca la vista materializada 'vista_riesgo_integrado'.
+    Esta vista consolida las tres fuentes (SIATA en vivo + riesgo histórico + municipios + enfermedades)
+    en una sola tabla desnormalizada para consulta directa desde la API y el notebook.
+    Ejecutar como paso final del pipeline ETL.
+    """
+    cur = conn.cursor()
+    try:
+        cur.execute("SELECT 1 FROM pg_matviews WHERE matviewname = 'vista_riesgo_integrado'")
+        existe = cur.fetchone()
+
+        sql_vista = """
+        CREATE MATERIALIZED VIEW IF NOT EXISTS vista_riesgo_integrado AS
+        WITH ultima_siata AS (
+            SELECT DISTINCT ON (estacion) 
+                estacion, pm25_ica, categoria_ica, fecha_hora
+            FROM mediciones_siata
+            WHERE pm25_ica IS NOT NULL
+            ORDER BY estacion, fecha_hora DESC
+        )
+        SELECT 
+            m.id AS municipio_id,
+            m.nombre_normalizado AS municipio,
+            us.estacion AS estacion_siata,
+            us.pm25_ica AS pm25_actual,
+            us.categoria_ica,
+            us.fecha_hora AS ultima_medicion,
+            gd.id AS grupo_diagnostico_id,
+            gd.nombre AS enfermedad,
+            gd.codigo_cie10,
+            ar.sexo,
+            ar.grupo_edad,
+            ar.beta AS coeficiente_riesgo,
+            ar.porcentaje_incremento_riesgo AS incremento_basico_historico,
+            ROUND((EXP(ar.beta * us.pm25_ica) - 1) * 100, 2) AS incremento_riesgo_pct_actual
+        FROM ultima_siata us
+        JOIN municipios m ON us.estacion ILIKE '%' || m.nombre_normalizado || '%'
+        JOIN analisis_riesgo ar ON ar.municipio_id = m.id
+        JOIN grupos_diagnosticos gd ON ar.grupo_diagnostico_id = gd.id
+        JOIN contaminantes c ON ar.contaminante_id = c.id
+        WHERE c.nombre = 'pm25'
+        ORDER BY m.nombre_normalizado, ar.sexo, ar.grupo_edad;
+        """
+
+        if not existe:
+            cur.execute(sql_vista)
+            print("[OK] Vista materializada 'vista_riesgo_integrado' creada.")
+        else:
+            cur.execute("REFRESH MATERIALIZED VIEW vista_riesgo_integrado;")
+            print("[OK] Vista materializada 'vista_riesgo_integrado' refrescada.")
+
+        conn.commit()
+    except Exception as e:
+        conn.rollback()
+        print(f"[ERROR] Al crear/refrescar vista integrada: {e}")
+        raise
+    finally:
+        cur.close()
+
+
 def cargar_mediciones_siata(conn, df):
     """
     Carga los datos de SIATA en tiempo real en la base de datos PostgreSQL.

@@ -80,7 +80,23 @@ FROM prom_historico ph
 ORDER BY ph.promedio_casos_historico DESC;
 
 
--- 5. MONITOREO DE MEDICIONES SIATA EN TIEMPO REAL
+-- 5. VISTA MATERIALIZADA CONSOLIDADA (PASO FINAL DEL PIPELINE)
+-- ----------------------------------------------------------------------------
+-- La vista `vista_riesgo_integrado` se crea/refresca al final del ETL
+-- con: SELECT db_postgres.crear_vista_datos_integracion(); (desde Python)
+-- Refresco manual si es necesario:
+--   REFRESH MATERIALIZED VIEW vista_riesgo_integrado;
+
+-- Ver contenido de la vista consolidada (3 fuentes integradas)
+SELECT * FROM vista_riesgo_integrado
+ORDER BY incremento_riesgo_pct_actual DESC
+LIMIT 20;
+
+-- Conteo de registros en la vista
+SELECT COUNT(*) AS total_integrados FROM vista_riesgo_integrado;
+
+
+-- 6. MONITOREO DE MEDICIONES SIATA EN TIEMPO REAL
 -- ----------------------------------------------------------------------------
 -- Muestra las últimas 10 mediciones recibidas por el scheduler.
 SELECT 

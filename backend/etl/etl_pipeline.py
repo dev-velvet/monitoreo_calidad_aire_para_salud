@@ -6,8 +6,7 @@ import pandas as pd
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 from config import MUNICIPIOS_MAPA
-from limpieza_historicos_A import limpiar_analisis_riesgo, limpiar_enfermedades
-from limpieza_historicos_B import limpiar_tasa_mortalidad, limpiar_defunciones
+from limpieza_datos import limpiar_analisis_riesgo, limpiar_enfermedades, limpiar_tasa_mortalidad, limpiar_defunciones
 from extract_siata import get_pm25_siata
 import db_postgres
 
@@ -77,6 +76,10 @@ def ejecutar_pipeline_completo():
         print("\n--- Cargando Datos de API SIATA (Tiempo Real) ---")
         df_siata = get_pm25_siata()
         db_postgres.cargar_mediciones_siata(conn, df_siata)
+        
+        # 7. PASO FINAL: Crear/Refrescar Vista Materializada Consolidada
+        print("\n--- Consolidando Vista Integrada (3 fuentes combinadas) ---")
+        db_postgres.crear_vista_datos_integrados(conn)
         
         print("\n" + "=" * 80)
         print("               ¡PIPELINE ETL EJECUTADO EXITOSAMENTE!")
