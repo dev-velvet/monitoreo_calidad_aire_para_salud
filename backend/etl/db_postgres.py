@@ -361,14 +361,26 @@ def crear_vista_datos_integrados(conn):
             FROM mediciones_siata
             WHERE pm25_ica IS NOT NULL
             ORDER BY estacion, fecha_hora DESC
+        ),
+        estacion_por_municipio AS (
+            SELECT DISTINCT ON (m.id)
+                m.id AS municipio_id,
+                m.nombre_normalizado AS municipio,
+                us.estacion AS estacion_siata,
+                us.pm25_ica AS pm25_actual,
+                us.categoria_ica,
+                us.fecha_hora AS ultima_medicion
+            FROM ultima_siata us
+            JOIN municipios m ON us.estacion ILIKE '%' || m.nombre_normalizado || '%'
+            ORDER BY m.id, us.fecha_hora DESC
         )
         SELECT 
-            m.id AS municipio_id,
-            m.nombre_normalizado AS municipio,
-            us.estacion AS estacion_siata,
-            us.pm25_ica AS pm25_actual,
-            us.categoria_ica,
-            us.fecha_hora AS ultima_medicion,
+            em.municipio_id,
+            em.municipio,
+            em.estacion_siata,
+            em.pm25_actual,
+            em.categoria_ica,
+            em.ultima_medicion,
             gd.id AS grupo_diagnostico_id,
             gd.nombre AS enfermedad,
             gd.codigo_cie10,
@@ -376,14 +388,13 @@ def crear_vista_datos_integrados(conn):
             ar.grupo_edad,
             ar.beta AS coeficiente_riesgo,
             ar.porcentaje_incremento_riesgo AS incremento_basico_historico,
-            ROUND((EXP(ar.beta * us.pm25_ica) - 1) * 100, 2) AS incremento_riesgo_pct_actual
-        FROM ultima_siata us
-        JOIN municipios m ON us.estacion ILIKE '%' || m.nombre_normalizado || '%'
-        JOIN analisis_riesgo ar ON ar.municipio_id = m.id
+            ROUND((EXP(ar.beta * (em.pm25_actual / 10.0)) - 1) * 100, 2) AS incremento_riesgo_pct_actual
+        FROM estacion_por_municipio em
+        JOIN analisis_riesgo ar ON ar.municipio_id = em.municipio_id
         JOIN grupos_diagnosticos gd ON ar.grupo_diagnostico_id = gd.id
         JOIN contaminantes c ON ar.contaminante_id = c.id
         WHERE c.nombre = 'pm25'
-        ORDER BY m.nombre_normalizado, ar.sexo, ar.grupo_edad;
+        ORDER BY em.municipio, ar.sexo, ar.grupo_edad;
         """
 
         if not existe:
