@@ -75,7 +75,7 @@ def get_historico_enfermedades(
         query += " AND e.grupo_edad ILIKE %s"
         params.append(grupo_edad)
         
-    query += " ORDER BY e.periodo ASC, e.casos DESC LIMIT 500;"
+    query += " ORDER BY e.periodo ASC, e.casos DESC LIMIT 10000;"
     
     with get_db() as conn:
         with conn.cursor() as cur:
@@ -107,7 +107,7 @@ def get_historico_defunciones(
         query += " AND d.grupo_diagnostico_id = %s"
         params.append(grupo_diagnostico_id)
         
-    query += " ORDER BY d.periodo ASC LIMIT 500;"
+    query += " ORDER BY d.periodo ASC LIMIT 10000;"
     
     with get_db() as conn:
         with conn.cursor() as cur:
