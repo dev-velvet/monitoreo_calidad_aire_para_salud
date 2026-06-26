@@ -1,6 +1,5 @@
 import os
 import pandas as pd
-
 try:
     from config import (
         CSV_ANALISIS_RIESGO,
@@ -10,6 +9,8 @@ try:
         MUNICIPIOS_MAPA,
         EDADES_MAPA
     )
+
+    
 except ImportError:
     from etl.config import (
         CSV_ANALISIS_RIESGO,
