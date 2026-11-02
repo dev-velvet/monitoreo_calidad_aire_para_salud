@@ -53,7 +53,7 @@ def extraer_siata():
         3. Iteración sobre cada <Placemark> (= estación de monitoreo)
         4. Extracción de: nombre, PM2.5, fecha, coordenadas
         5. Filtro de valores atípicos: -999 y negativos → NULL
-        6. Clasificación ICA según umbrales EPA
+        6. Clasificación ICA según Resolución 2254 de 2017 (Colombia)
 
     Returns:
         pd.DataFrame con columnas:
@@ -141,28 +141,32 @@ def extraer_siata():
 def _clasificar_ica(pm25):
     """
     Clasifica el valor de PM2.5 en categorías del Índice de Calidad del Aire (ICA)
-    según los umbrales de la EPA (Environmental Protection Agency).
+    según los puntos de corte de la Resolución 2254 de 2017 (Colombia), Tabla No. 6.
+
+    Los puntos de corte corresponden a promedios de 24 horas; aquí se aplican a la
+    lectura instantánea de SIATA como aproximación operativa.
 
     Umbrales (µg/m³):
         0-12    → Buena
-        12-35   → Moderada
-        35-55   → Dañina para grupos sensibles
-        55-150  → Dañina
-        150-250 → Muy dañina
-        >250    → Peligrosa
+        13-37   → Aceptable
+        38-55   → Dañina a la salud de grupos sensibles
+        56-150  → Dañina para la salud
+        151-250 → Muy dañina para la salud
+        251-500 → Peligrosa
+        >500    → Peligrosa (fuera de la escala ICA)
     """
     if pm25 is None or pd.isna(pm25):
         return 'Sin dato'
-    if pm25 < 12:
+    if pm25 <= 12:
         return 'Buena'
-    if pm25 < 35:
-        return 'Moderada'
-    if pm25 < 55:
-        return 'Dañina para grupos sensibles'
-    if pm25 < 150:
-        return 'Dañina'
-    if pm25 < 250:
-        return 'Muy dañina'
+    if pm25 <= 37:
+        return 'Aceptable'
+    if pm25 <= 55:
+        return 'Dañina a la salud de grupos sensibles'
+    if pm25 <= 150:
+        return 'Dañina para la salud'
+    if pm25 <= 250:
+        return 'Muy dañina para la salud'
     return 'Peligrosa'
 
 

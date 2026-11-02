@@ -12,7 +12,7 @@ Se realizaron las siguientes **transformaciones** sobre las fuentes:
 
 4. **Filtro de valores de mantenimiento de SIATA**: La API devuelve `-999` cuando una estación está en mantenimiento. Se convirtieron estos valores a `None` (NULL en la base de datos) para evitar sesgos en los cálculos de promedios.
 
-5. **Clasificación de categoría ICA**: A partir del valor de PM2.5 se asignó una categoría según los umbrales EPA (Buena, Moderada, Dañina para grupos sensibles, Dañina, Muy dañina, Peligrosa).
+5. **Clasificación de categoría ICA**: A partir del valor de PM2.5 se asignó una categoría según los puntos de corte de la Resolución 2254 de 2017 (Buena, Aceptable, Dañina a la salud de grupos sensibles, Dañina para la salud, Muy dañina para la salud, Peligrosa).
 
 6. **Renombrado de columnas**: Los CSVs tenían nombres en español con espacios (`beta del contaminante`, `porcentaje del incremento del riesgo`). Se renombraron a snake_case (`beta`, `porcentaje_incremento_riesgo`) para consistencia con el esquema de la base de datos.
 

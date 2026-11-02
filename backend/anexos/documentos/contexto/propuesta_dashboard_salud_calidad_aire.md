@@ -93,7 +93,7 @@ La arquitectura está diseñada para ser ligera, responsiva y fácil de desplega
 El dashboard se estructurará en tres áreas visuales de alto impacto:
 
 ### Sección A: Estado Actual y Mapa de Calor (Tiempo Real)
-1. **Mapa de Estaciones Metropolitano (Leaflet.js)**: Marcadores geográficos de SIATA pintados según su escala ICA (Verde = Buena, Amarillo = Moderada, Naranja = Dañina para grupos sensibles). Al hacer clic en un pin, se despliega la lectura exacta.
+1. **Mapa de Estaciones Metropolitano (Leaflet.js)**: Marcadores geográficos de SIATA pintados según su escala ICA (Verde = Buena, Amarillo = Aceptable, Naranja = Dañina a la salud de grupos sensibles). Al hacer clic en un pin, se despliega la lectura exacta.
    - *Valor*: Permite geolocalizar instantáneamente los focos críticos de contaminación en el Valle.
 2. **KPIs del Promedio Regional**: Tarjetas grandes con el promedio de PM2.5 del Valle de Aburrá, la estación con peor calidad de aire y el estado general de la alerta.
 

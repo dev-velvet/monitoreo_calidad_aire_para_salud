@@ -23,7 +23,7 @@ Sección A: Estado Actual y Mapa de Calor
 Mapa Leaflet.js → mediciones_siata (latitud, longitud, pm25_ica, categoria_ica)
 Estación #12 - Tráfico Centro   | PM2.5=24.0 | (6.2526, -75.5696) ← pin rojo/moderado
 Estación #94 - Santa Elena      | PM2.5=4.0  | (6.2364, -75.4985) ← pin verde/bueno
-Cada pin se pinta según categoria_ica (Buena/Moderada/Dañina...). Las coordenadas latitud/longitud vienen directo de la API de SIATA.
+Cada pin se pinta según categoria_ica (Buena/Aceptable/Dañina a la salud de grupos sensibles/Dañina/Muy dañina/Peligrosa). Las coordenadas latitud/longitud vienen directo de la API de SIATA.
 KPIs Promedio Regional → mediciones_siata con agregaciones:
 PM2.5 promedio: 14.0  (AVG)
 Estación más crítica: Estación #12 - Tráfico Centro con 24.0  (MAX)

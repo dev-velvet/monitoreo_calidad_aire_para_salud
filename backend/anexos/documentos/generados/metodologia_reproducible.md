@@ -134,7 +134,7 @@ garantizar integridad referencial.
 | `municipio` | `VARCHAR` | Dimensión municipios | Delimitación territorial y filtro |
 | `estacion_siata` | `VARCHAR` | API SIATA | Trazabilidad del sensor usado |
 | `pm25_actual` | `NUMERIC` | API SIATA (última lectura) | Exposición actual |
-| `categoria_ica` | `VARCHAR` | Clasificación EPA | Semáforo de calidad del aire |
+| `categoria_ica` | `VARCHAR` | Clasificación Res. 2254 de 2017 | Semáforo de calidad del aire |
 | `ultima_medicion` | `TIMESTAMP` | API SIATA | Frescura del dato |
 | `coeficiente_riesgo` (`beta`) | `NUMERIC` | AnalisisRiesgo | Parámetro exposición–respuesta |
 | `sexo`, `grupo_edad` | `VARCHAR` | AnalisisRiesgo | Desagregación poblacional |
@@ -160,8 +160,20 @@ El DDL completo se encuentra en `backend/etl/carga/esquema.py`.
   completo se ejecuta una vez; el daemon `etl/scheduler.py` actualiza la fuente
   primaria cada hora en producción (`--demo` cada 10 s para demostración).
 
-Cada lectura se clasifica en categorías ICA (Buena, Moderada, Dañina para
-grupos sensibles, Dañina, Muy dañina, Peligrosa) según umbrales EPA.
+Cada lectura se clasifica con los puntos de corte de PM2.5 de la Resolución 2254
+de 2017 (Tabla No. 6). Aunque la norma define estos rangos para promedios de
+24 horas, el sistema los aplica a la lectura instantánea como aproximación
+operativa:
+
+| PM2.5 (µg/m³) | Categoría ICA |
+|---------------|---------------|
+| 0–12 | Buena |
+| 13–37 | Aceptable |
+| 38–55 | Dañina a la salud de grupos sensibles |
+| 56–150 | Dañina para la salud |
+| 151–250 | Muy dañina para la salud |
+| 251–500 | Peligrosa |
+| >500 | Peligrosa (fuera de la escala ICA) |
 
 ### 4.2 Fuentes secundarias: archivos CSV
 

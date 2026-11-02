@@ -1,6 +1,7 @@
 from fastapi import APIRouter, Query, HTTPException
 from typing import Optional
 from app.database import get_db
+from etl.extraccion.siata_api import _clasificar_ica as clasificar_ica_pm25
 
 router = APIRouter(prefix="/api/salud", tags=["salud"])
 
@@ -186,7 +187,7 @@ def get_riesgo_cruzado(
                 """)
                 fallback_res = cur.fetchone()
                 pm25_actual = float(fallback_res["promedio"]) if fallback_res and fallback_res["promedio"] else 0.0
-                categoria_ica = "Moderada" if pm25_actual > 12 else "Buena"
+                categoria_ica = clasificar_ica_pm25(pm25_actual)
                 estacion_siata = "Promedio Regional (Valle de Aburrá)"
                 nota_muni = f"No hay estaciones de monitoreo activas en {nombre_muni}. Se utiliza el promedio regional."
 
