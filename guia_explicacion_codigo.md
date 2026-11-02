@@ -5,12 +5,7 @@
 > conecta con el problema, el objetivo y el aporte de la investigación. Está
 > pensado para la sustentación, para la revisión del docente y para que cualquier
 > integrante del equipo pueda defender el trabajo sin depender de otro.
->
-> **Documentos relacionados:**
-> - `metodologia_reproducible.md` — metodología lista para el paper.
-> - `plan_mejoramiento.md` — comentarios de evaluadores y plan de mejora.
-> - `backend/fuente_datos/diagrama_flujo.md` — diagrama ETL.
-> - `guion_pitch.md` — guion de la presentación oral.
+
 
 ---
 
