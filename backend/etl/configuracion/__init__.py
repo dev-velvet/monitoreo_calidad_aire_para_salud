@@ -13,7 +13,7 @@ from etl.configuracion.settings import (
     DB_PASSWORD,
     DB_NAME,
     BASE_DIR,
-    FUENTE_DATOS_DIR,
+    DATOS_CRUDOS_DIR,
     CSV_ANALISIS_RIESGO,
     CSV_ENFERMEDADES,
     CSV_TASA_MORTALIDAD,

@@ -13,11 +13,12 @@ consume en un dashboard interactivo.
 
 | Documento | Contenido |
 |-----------|-----------|
-| [`metodologia_reproducible.md`](metodologia_reproducible.md) | Metodología reescrita y reproducible (para el paper) |
-| [`guia_explicacion_codigo.md`](guia_explicacion_codigo.md) | Cómo explicar el código y su relación con la investigación |
-| [`plan_mejoramiento.md`](plan_mejoramiento.md) | Plan de respuesta a los comentarios de los evaluadores |
-| [`backend/fuente_datos/diagrama_flujo.md`](backend/fuente_datos/diagrama_flujo.md) | Diagrama de flujo ETL (Mermaid) |
-| [`guion_pitch.md`](guion_pitch.md) | Guion de la presentación oral |
+| [`backend/anexos/README.md`](backend/anexos/README.md) | Índice y organización de todos los anexos |
+| [`backend/anexos/documentos/generados/metodologia_reproducible.md`](backend/anexos/documentos/generados/metodologia_reproducible.md) | Metodología reescrita y reproducible (para el paper) |
+| [`backend/anexos/documentos/generados/guia_explicacion_codigo.md`](backend/anexos/documentos/generados/guia_explicacion_codigo.md) | Cómo explicar el código y su relación con la investigación |
+| [`backend/anexos/documentos/generados/plan_mejoramiento.md`](backend/anexos/documentos/generados/plan_mejoramiento.md) | Plan de respuesta a los comentarios de los evaluadores |
+| [`backend/anexos/documentos/generados/diagrama_flujo.md`](backend/anexos/documentos/generados/diagrama_flujo.md) | Diagrama de flujo ETL (Mermaid) |
+| [`backend/anexos/documentos/generados/guion_pitch.md`](backend/anexos/documentos/generados/guion_pitch.md) | Guion de la presentación oral |
 
 ---
 
@@ -47,12 +48,9 @@ consume en un dashboard interactivo.
 ```text
 monitoreo_calidad_aire_para_salud/
 ├── README.md
-├── metodologia_reproducible.md
-├── guia_explicacion_codigo.md
-├── plan_mejoramiento.md
 │
 └── backend/
-    ├── etl/
+    ├── etl/                    # Pipeline ETL por fases
     │   ├── configuracion/      # settings.py, diccionarios.py
     │   ├── extraccion/         # siata_api.py
     │   ├── transformacion/     # limpieza_*.py, calidad_datos.py
@@ -61,8 +59,16 @@ monitoreo_calidad_aire_para_salud/
     │   └── scheduler.py        # Daemon de actualización
     ├── app/                    # API FastAPI (routers: municipios, siata, salud)
     ├── consultas/              # consultas_validacion.sql
-    ├── fuente_datos/           # CSV originales y documentación de fuentes
-    ├── anexos/                 # Notebooks y CSV de salida (integrados y limpios)
+    ├── anexos/                 # Todos los anexos (ver anexos/README.md)
+    │   ├── datos/
+    │   │   ├── crudos/         # 4 CSV originales 2008–2017
+    │   │   ├── limpios/        # Salidas de limpieza
+    │   │   └── integrados/     # datos_integrados.csv
+    │   ├── notebooks/          # Notebooks EDA e integración
+    │   ├── documentos/
+    │   │   ├── contexto/       # Insumos y contexto para la IA
+    │   │   └── generados/      # Documentos producidos (metodología, guía, plan...)
+    │   └── recursos/           # Imágenes y documento original
     ├── check_data.py           # Verificación rápida de conteos
     ├── requirements.txt
     └── pyproject.toml
@@ -142,9 +148,10 @@ de las tablas de hechos.
 
 - `vista_riesgo_integrado`: cruza la última lectura de PM2.5 por estación con los
   coeficientes β históricos del municipio, sexo, grupo etario y diagnóstico.
-- `backend/anexos/datos_integrados.csv`: evidencia exportada del resultado.
-- `backend/anexos/DATOS_LIMPIOS.csv` y `backend/anexos/DefunsionesCalculadas_LIMPIO.csv`:
-  salidas limpias de los históricos de riesgo y defunciones.
+- `backend/anexos/datos/integrados/datos_integrados.csv`: evidencia exportada del resultado.
+- `backend/anexos/datos/limpios/DATOS_LIMPIOS.csv` y
+  `backend/anexos/datos/limpios/DefunsionesCalculadas_LIMPIO.csv`: salidas limpias
+  de los históricos de riesgo y defunciones.
 - API REST con endpoints de catálogos, mediciones actuales y calculadora de
   riesgo personalizado (`/api/salud/riesgo-cruzado`).
 

@@ -18,6 +18,3 @@ dist/
 # OS
 .DS_Store
 Thumbs.db
-
-# Data source files (raw CSVs)
-fuente_datos

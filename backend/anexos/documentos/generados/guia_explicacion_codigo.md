@@ -76,8 +76,11 @@ monitoreo_calidad_aire_para_salud/
     │
     ├── consultas/
     │   └── consultas_validacion.sql   # Verificación de integridad
-    ├── fuente_datos/                  # CSV originales y documentación de fuentes
-    ├── anexos/                        # Notebooks y CSV de salida (integrados y limpios)
+    ├── anexos/                        # Todos los anexos (ver anexos/README.md)
+    │   ├── datos/                     # crudos/, limpios/, integrados/
+    │   ├── notebooks/                 # Notebooks EDA e integración
+    │   ├── documentos/                # contexto/ y generados/
+    │   └── recursos/                  # Imágenes y documento original
     ├── check_data.py                  # Verificación rápida de conteos
     ├── requirements.txt
     └── pyproject.toml
@@ -265,7 +268,7 @@ flowchart LR
 | “No se dice si usan suma, promedio o mediana” | `DISTINCT ON (estacion) ... ORDER BY fecha_hora DESC`; `AVG` solo como respaldo | Señalar la CTE `ultima_siata` y la nota de respaldo |
 | “Falta la estructura de datos” | DDL en `esquema.py` y diccionario en `metodologia_reproducible.md` | Abrir el esquema estrella |
 | “Faltan técnicas de atípicos y calidad” | `calidad_datos.py`, filtro `-999`, `drop_duplicates`, `UNIQUE`, `UPSERT` | Mostrar el informe de calidad y las consultas SQL |
-| “Falta apoyo gráfico / base integrada” | `anexos/datos_integrados.csv`, `vista_riesgo_integrado`, dashboard | Abrir el CSV, la vista y el dashboard desplegado |
+| “Falta apoyo gráfico / base integrada” | `anexos/datos/integrados/datos_integrados.csv`, `vista_riesgo_integrado`, dashboard | Abrir el CSV, la vista y el dashboard desplegado |
 
 ---
 
@@ -353,7 +356,7 @@ el resultado por API. Ese cruce es el diferenciador frente a integraciones previ
   `python -m etl.pipeline` desde `backend/`.
 
 - **¿Dónde está la evidencia de que funcionó?**
-  En `anexos/datos_integrados.csv`, en la vista `vista_riesgo_integrado`, en las
+  En `anexos/datos/integrados/datos_integrados.csv`, en la vista `vista_riesgo_integrado`, en las
   consultas de validación y en el dashboard desplegado.
 
 ---
@@ -367,8 +370,8 @@ el resultado por API. Ese cruce es el diferenciador frente a integraciones previ
 | Integración | `backend/etl/carga/vista_integrada.py` | JOIN geográfico + fórmula ΔR |
 | Estructura | `backend/etl/carga/esquema.py` | Modelo relacional |
 | Calidad | `backend/etl/transformacion/calidad_datos.py` | Atípicos y validación |
-| Limpieza | `backend/anexos/DATOS_LIMPIOS.csv`, `backend/anexos/DefunsionesCalculadas_LIMPIO.csv` | Salidas limpias de los históricos |
-| Resultado | `backend/anexos/datos_integrados.csv` | 2.402 registros integrados |
+| Limpieza | `backend/anexos/datos/limpios/DATOS_LIMPIOS.csv`, `backend/anexos/datos/limpios/DefunsionesCalculadas_LIMPIO.csv` | Salidas limpias de los históricos |
+| Resultado | `backend/anexos/datos/integrados/datos_integrados.csv` | 2.402 registros integrados |
 | Aplicación | `https://airwise-health.onrender.com` | Uso real del resultado |
 
 ---

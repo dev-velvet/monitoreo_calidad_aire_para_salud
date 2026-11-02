@@ -1,0 +1,714 @@
+﻿Municipio;Periodo;Sexo;Edad;Capitulo;Grupo;Muertes
+Barbosa;2013;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;7,32
+Barbosa;2014;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;17,74
+Barbosa;2013;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;10,44
+Barbosa;2010;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;2,08
+Barbosa;2012;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;4,14
+Barbosa;2011;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;5,18
+Barbosa;2011;Hombre;Menor de 5;Enfermedad respiratoria;Influenza [gripe] y neumonia;1,01
+Barbosa;2014;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;4,18
+Barbosa;2017;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;16,67
+Barbosa;2011;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;1,03
+Barbosa;2010;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;2,07
+Barbosa;2009;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;3,09
+Barbosa;2008;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;5,2
+Barbosa;2009;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;4,15
+Barbosa;2008;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;1,02
+Barbosa;2008;Mujer;Menor de 5;Enfermedad respiratoria;Influenza [gripe] y neumonia;1,01
+Barbosa;2009;Hombre;Menor de 5;Enfermedad respiratoria;Influenza [gripe] y neumonia;1,04
+Barbosa;2014;Mujer;Menor de 5;Enfermedad respiratoria;Influenza [gripe] y neumonia;1,01
+Barbosa;2009;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;3,11
+Barbosa;2012;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;2,08
+Barbosa;2017;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;4,18
+Barbosa;2016;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;4,14
+Barbosa;2015;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;2,08
+Barbosa;2014;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;3,13
+Barbosa;2012;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;3,14
+Barbosa;2013;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;2,08
+Barbosa;2010;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;5,2
+Barbosa;2013;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;3,13
+Barbosa;2017;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;11,46
+Barbosa;2016;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;10,42
+Barbosa;2014;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;2,06
+Barbosa;2015;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;12,55
+Barbosa;2015;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;4,16
+Barbosa;2011;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;1,04
+Barbosa;2014;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;11,47
+Barbosa;2012;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;9,37
+Barbosa;2016;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;5,23
+Barbosa;2011;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;6,25
+Barbosa;2010;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;16,67
+Barbosa;2009;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;10,43
+Barbosa;2008;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;8,36
+Barbosa;2017;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;2,08
+Barbosa;2008;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;11,5
+Barbosa;2017;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;4,2
+Barbosa;2009;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;15,64
+Barbosa;2008;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;4,17
+Barbosa;2016;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;4,2
+Barbosa;2015;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;8,4
+Barbosa;2010;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;13,53
+Barbosa;2016;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;2,07
+Barbosa;2014;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;2,09
+Barbosa;2013;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;2,09
+Barbosa;2011;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;13,55
+Barbosa;2012;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;3,14
+Barbosa;2012;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;18,74
+Barbosa;2011;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;7,35
+Barbosa;2010;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;1,04
+Barbosa;2015;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;11,5
+Barbosa;2015;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;4,15
+Barbosa;2009;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;1,06
+Barbosa;2016;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;11,47
+Barbosa;2010;Hombre;Menor de 5;Enfermedad respiratoria;Influenza [gripe] y neumonia;1,01
+Barbosa;2017;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;3,13
+Barbosa;2013;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;1,04
+Bello;2015;Mujer;Menor de 5;Enfermedad respiratoria;Influenza [gripe] y neumonia;2,06
+Bello;2013;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;12,61
+Bello;2017;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;113,8
+Bello;2016;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;112,73
+Bello;2012;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;26,36
+Bello;2013;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;84,38
+Bello;2014;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;14,7
+Bello;2011;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;27,47
+Bello;2015;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;105,36
+Bello;2014;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;88,56
+Bello;2011;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;24,23
+Bello;2015;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;16,84
+Bello;2012;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;105,35
+Bello;2012;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;112,75
+Bello;2011;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;85,4
+Bello;2015;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;31,44
+Bello;2016;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;14,71
+Bello;2017;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;31,55
+Bello;2010;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;97,03
+Bello;2009;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;56,81
+Bello;2010;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;27,41
+Bello;2008;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;89,5
+Bello;2017;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;16,85
+Bello;2015;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;95,88
+Bello;2008;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;90,55
+Bello;2014;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;82,23
+Bello;2013;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;61,18
+Bello;2008;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;22,15
+Bello;2017;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;34,8
+Bello;2010;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;25,25
+Bello;2012;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;13,7
+Bello;2011;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;14,78
+Bello;2014;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;22,05
+Bello;2016;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;31,63
+Bello;2016;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;26,35
+Bello;2013;Hombre;Menor de 5;Enfermedad respiratoria;Influenza [gripe] y neumonia;1,05
+Bello;2017;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;99,04
+Bello;2014;Hombre;Menor de 5;Enfermedad respiratoria;Influenza [gripe] y neumonia;1,05
+Bello;2009;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;72,56
+Bello;2015;Hombre;Menor de 5;Enfermedad respiratoria;Influenza [gripe] y neumonia;1,05
+Bello;2011;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;18,94
+Bello;2017;Hombre;Menor de 5;Enfermedad respiratoria;Influenza [gripe] y neumonia;2,03
+Bello;2010;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;15,82
+Bello;2009;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;23,14
+Bello;2009;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;24,28
+Bello;2011;Hombre;Menor de 5;Enfermedad respiratoria;Otras infecciones agudas de las vias respiratorias inferiores;1,01
+Bello;2013;Hombre;Menor de 5;Enfermedad respiratoria;Otras infecciones agudas de las vias respiratorias inferiores;1,01
+Bello;2015;Hombre;Menor de 5;Enfermedad respiratoria;Otras infecciones agudas de las vias respiratorias inferiores;2,03
+Bello;2008;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;21,02
+Bello;2015;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;29,59
+Bello;2008;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;21,01
+Bello;2009;Mujer;Mayores de 65;Enfermedad respiratoria;Infecciones agudas de las vias respiratorias superiores;1,06
+Bello;2009;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;15,75
+Bello;2017;Mujer;Menor de 5;Enfermedad circulatoria;Enfermedades cerebrovasculares;1,01
+Bello;2008;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;8,39
+Bello;2015;Hombre;Mayores de 65;Enfermedad respiratoria;Otras infecciones agudas de las vias respiratorias inferiores;1,06
+Bello;2010;Mujer;Menor de 5;Enfermedad respiratoria;Influenza [gripe] y neumonia;1,05
+Bello;2012;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;27,42
+Bello;2008;Mujer;Menor de 5;Enfermedad respiratoria;Influenza [gripe] y neumonia;1,05
+Bello;2010;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;80,16
+Bello;2009;Hombre;Menor de 5;Enfermedad respiratoria;Influenza [gripe] y neumonia;1,04
+Bello;2012;Hombre;Mayores de 65;Enfermedad respiratoria;Otras infecciones agudas de las vias respiratorias inferiores;1,02
+Bello;2014;Mujer;Menor de 5;Enfermedad respiratoria;Influenza [gripe] y neumonia;1,05
+Bello;2008;Hombre;Menor de 5;Enfermedad respiratoria;Influenza [gripe] y neumonia;3,07
+Bello;2009;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;27,35
+Bello;2017;Mujer;Menor de 5;Enfermedad respiratoria;Influenza [gripe] y neumonia;1,05
+Bello;2010;Mujer;Mayores de 65;Enfermedad respiratoria;Otras infecciones agudas de las vias respiratorias inferiores;1,05
+Bello;2012;Mujer;Menor de 5;Enfermedad respiratoria;Otras infecciones agudas de las vias respiratorias inferiores;1,02
+Bello;2017;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;45,24
+Bello;2014;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;25,31
+Bello;2013;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;27,36
+Bello;2010;Hombre;Menor de 5;Enfermedad respiratoria;Otras infecciones agudas de las vias respiratorias inferiores;1,01
+Bello;2016;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;35,83
+Bello;2015;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;22,02
+Bello;2013;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;27,46
+Bello;2014;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;30,5
+Bello;2016;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;89,56
+Bello;2012;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;14,73
+Bello;2013;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;24,21
+Bello;2011;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;76,95
+Bello;2010;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;22,1
+Caldas;2009;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;2,09
+Caldas;2016;Mujer;Menor de 5;Enfermedad respiratoria;Influenza [gripe] y neumonia;1,02
+Caldas;2009;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;4,23
+Caldas;2010;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;17,79
+Caldas;2014;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;6,33
+Caldas;2009;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;2,1
+Caldas;2010;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;7,35
+Caldas;2017;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;9,45
+Caldas;2009;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;14,65
+Caldas;2008;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;5,25
+Caldas;2008;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;3,12
+Caldas;2016;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;6,29
+Caldas;2008;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;20,98
+Caldas;2017;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;19,95
+Caldas;2013;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;4,23
+Caldas;2015;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;9,43
+Caldas;2013;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;17,8
+Caldas;2016;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;5,21
+Caldas;2014;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;5,24
+Caldas;2015;Mujer;Menor de 5;Enfermedad respiratoria;Influenza [gripe] y neumonia;1
+Caldas;2017;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;7,33
+Caldas;2016;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;24,11
+Caldas;2008;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;10,5
+Caldas;2012;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;6,29
+Caldas;2013;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;4,19
+Caldas;2017;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;5,29
+Caldas;2008;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;4,2
+Caldas;2010;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;1,04
+Caldas;2009;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;1,04
+Caldas;2011;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;16,8
+Caldas;2015;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;6,28
+Caldas;2014;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;29,37
+Caldas;2013;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;3,15
+Caldas;2011;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;2,08
+Caldas;2017;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;23,11
+Caldas;2010;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;20,93
+Caldas;2012;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;4,21
+Caldas;2016;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;14,68
+Caldas;2008;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;20,98
+Caldas;2013;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;17,8
+Caldas;2011;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;4,17
+Caldas;2013;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;4,2
+Caldas;2014;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;6,27
+Caldas;2012;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;4,2
+Caldas;2015;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;24,14
+Caldas;2009;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;14,65
+Caldas;2011;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;4,21
+Caldas;2014;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;15,74
+Caldas;2010;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;10,48
+Caldas;2010;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;3,12
+Caldas;2014;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;8,38
+Caldas;2015;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;6,3
+Caldas;2017;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;7,35
+Caldas;2012;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;7,36
+Caldas;2012;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;17,83
+Caldas;2015;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;26,26
+Caldas;2012;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;14,69
+Caldas;2011;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;19,95
+Caldas;2011;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;3,12
+Caldas;2016;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;4,18
+Caldas;2008;Hombre;Menor de 5;Enfermedad respiratoria;Influenza [gripe] y neumonia;1,04
+Caldas;2016;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;6,24
+Caldas;2015;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;10,51
+Copacabana;2012;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;1,01
+Copacabana;2016;Hombre;Menor de 5;Enfermedad respiratoria;Otras infecciones agudas de las vias respiratorias inferiores;1
+Copacabana;2010;Mujer;Menor de 5;Enfermedad respiratoria;Influenza [gripe] y neumonia;1,06
+Copacabana;2008;Mujer;Menor de 5;Enfermedad respiratoria;Otras infecciones agudas de las vias respiratorias inferiores;1,01
+Copacabana;2013;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;2,15
+Copacabana;2014;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;4,27
+Copacabana;2015;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;1,08
+Copacabana;2016;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;3,17
+Copacabana;2017;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;4,2
+Copacabana;2008;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;12,79
+Copacabana;2009;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;29,55
+Copacabana;2010;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;15,97
+Copacabana;2011;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;26,71
+Copacabana;2012;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;22,38
+Copacabana;2015;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;18,17
+Copacabana;2016;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;29,91
+Copacabana;2010;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;3,16
+Copacabana;2011;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;4,26
+Copacabana;2012;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;5,25
+Copacabana;2013;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;15,99
+Copacabana;2014;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;18,16
+Copacabana;2013;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;22,39
+Copacabana;2016;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;3,21
+Copacabana;2017;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;5,34
+Copacabana;2008;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;2,17
+Copacabana;2009;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;3,22
+Copacabana;2010;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;2,12
+Copacabana;2011;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;6,4
+Copacabana;2012;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;4,35
+Copacabana;2013;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;4,25
+Copacabana;2014;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;2,11
+Copacabana;2016;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;6,46
+Copacabana;2017;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;3,23
+Copacabana;2008;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;17,06
+Copacabana;2009;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;12,67
+Copacabana;2010;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;21,33
+Copacabana;2011;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;30,96
+Copacabana;2012;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;23,47
+Copacabana;2014;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;26,7
+Copacabana;2015;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;17,1
+Copacabana;2016;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;21,35
+Copacabana;2017;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;27,65
+Copacabana;2010;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;6,37
+Copacabana;2013;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;4,31
+Copacabana;2014;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;4,29
+Copacabana;2015;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;3,2
+Copacabana;2016;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;4,3
+Copacabana;2017;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;7,48
+Copacabana;2009;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;4,33
+Copacabana;2008;Hombre;Menor de 5;Enfermedad respiratoria;Influenza [gripe] y neumonia;1
+Copacabana;2008;Mujer;Menor de 5;Enfermedad respiratoria;Influenza [gripe] y neumonia;1,04
+Copacabana;2008;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;3,15
+Copacabana;2009;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;3,18
+Copacabana;2008;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;3,19
+Copacabana;2008;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;8,53
+Copacabana;2009;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;3,19
+Copacabana;2010;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;2,13
+Copacabana;2011;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;5,37
+Copacabana;2017;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;31,92
+Copacabana;2014;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;3,24
+Copacabana;2015;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;3,2
+Copacabana;2015;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;5,43
+Copacabana;2012;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;3,16
+Envigado;2009;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;48,29
+Envigado;2016;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;7,34
+Envigado;2014;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;47,43
+Envigado;2008;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;49,53
+Envigado;2009;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;52,49
+Envigado;2008;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;7,37
+Envigado;2010;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;15,73
+Envigado;2011;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;23,1
+Envigado;2016;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;72,54
+Envigado;2015;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;23,19
+Envigado;2008;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;57,95
+Envigado;2016;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;22,17
+Envigado;2013;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;13,62
+Envigado;2009;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;15,81
+Envigado;2013;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;13,77
+Envigado;2016;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;35,53
+Envigado;2011;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;12,62
+Envigado;2015;Hombre;Menor de 5;Enfermedad respiratoria;Influenza [gripe] y neumonia;1,04
+Envigado;2014;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;15,73
+Envigado;2017;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;15,7
+Envigado;2010;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;12,66
+Envigado;2009;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;19,89
+Envigado;2012;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;10,54
+Envigado;2015;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;29,36
+Envigado;2011;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;12,62
+Envigado;2017;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;89,34
+Envigado;2013;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;7,37
+Envigado;2012;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;67,4
+Envigado;2010;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;12,56
+Envigado;2016;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;85,16
+Envigado;2010;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;16,9
+Envigado;2011;Mujer;Menor de 5;Enfermedad respiratoria;Influenza [gripe] y neumonia;1,02
+Envigado;2012;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;25,14
+Envigado;2015;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;41,98
+Envigado;2010;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;63,2
+Envigado;2013;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;64,29
+Envigado;2014;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;13,66
+Envigado;2015;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;60,99
+Envigado;2008;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;13,66
+Envigado;2012;Mujer;Menor de 5;Enfermedad respiratoria;Otras infecciones agudas de las vias respiratorias inferiores;1,02
+Envigado;2014;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;14,62
+Envigado;2008;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;23,2
+Envigado;2014;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;71,68
+Envigado;2017;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;26,23
+Envigado;2015;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;9,49
+Envigado;2009;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;12,56
+Envigado;2017;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;53,56
+Envigado;2012;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;78,99
+Envigado;2011;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;63,19
+Envigado;2010;Hombre;Menor de 5;Enfermedad respiratoria;Influenza [gripe] y neumonia;1,05
+Envigado;2008;Mujer;Mayores de 65;Enfermedad respiratoria;Otras infecciones agudas de las vias respiratorias inferiores;1,06
+Envigado;2013;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;47,43
+Envigado;2008;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;13,69
+Envigado;2014;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;37,87
+Envigado;2017;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;22,03
+Envigado;2011;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;9,43
+Envigado;2011;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;70,57
+Envigado;2009;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;14,69
+Envigado;2011;Hombre;Menor de 5;Enfermedad respiratoria;Influenza [gripe] y neumonia;1,05
+Envigado;2013;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;28,35
+Envigado;2010;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;80,06
+Envigado;2015;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;68,35
+Envigado;2017;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;78,83
+Envigado;2012;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;8,41
+Envigado;2016;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;26,15
+Envigado;2012;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;17,79
+Girardota;2009;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;8,44
+Girardota;2012;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;3,16
+Girardota;2017;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;2,1
+Girardota;2009;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;3,15
+Girardota;2013;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;4,24
+Girardota;2010;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;9,46
+Girardota;2008;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;3,14
+Girardota;2014;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;2,11
+Girardota;2009;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;1,05
+Girardota;2014;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;27,37
+Girardota;2010;Hombre;Mayores de 65;Enfermedad respiratoria;Otras infecciones agudas de las vias respiratorias inferiores;1,04
+Girardota;2008;Mujer;Menor de 5;Enfermedad circulatoria;Enfermedades cerebrovasculares;1,01
+Girardota;2008;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;3,14
+Girardota;2017;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;1,06
+Girardota;2017;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;15,81
+Girardota;2013;Mujer;Mayores de 65;Enfermedad respiratoria;Otras infecciones agudas de las vias respiratorias inferiores;1,05
+Girardota;2015;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;3,16
+Girardota;2008;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;1,07
+Girardota;2016;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;10,54
+Girardota;2009;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;1,04
+Girardota;2016;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;2,11
+Girardota;2010;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;2,1
+Girardota;2017;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;5,25
+Girardota;2017;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;9,49
+Girardota;2015;Hombre;Menor de 5;Enfermedad respiratoria;Influenza [gripe] y neumonia;1,01
+Girardota;2008;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;13,69
+Girardota;2008;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;2,13
+Girardota;2008;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;25,26
+Girardota;2016;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;2,08
+Girardota;2011;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;1,05
+Girardota;2009;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;14,77
+Girardota;2015;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;15,77
+Girardota;2010;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;8,44
+Girardota;2009;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;1,05
+Girardota;2013;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;13,72
+Girardota;2011;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;9,46
+Girardota;2015;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;2,09
+Girardota;2016;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;2,09
+Girardota;2012;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;11,62
+Girardota;2014;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;22,11
+Girardota;2012;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;11,62
+Girardota;2015;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;27,35
+Girardota;2010;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;1,06
+Girardota;2017;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;3,16
+Girardota;2016;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;11,59
+Girardota;2013;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;1,06
+Girardota;2013;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;12,67
+Girardota;2016;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;2,1
+Girardota;2011;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;2,11
+Girardota;2012;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;2,11
+Girardota;2011;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;2,1
+Girardota;2012;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;1,04
+Girardota;2012;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;2,11
+Girardota;2013;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;5,25
+Girardota;2011;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;9,46
+Girardota;2014;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;3,16
+Girardota;2011;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;2,11
+Girardota;2015;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;2,12
+Girardota;2015;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;5,29
+Girardota;2013;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;3,14
+Girardota;2014;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;1,05
+Itagui;2012;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;7,3
+Itagui;2011;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;16,73
+Itagui;2010;Mujer;Menor de 5;Enfermedad respiratoria;Otras infecciones agudas de las vias respiratorias inferiores;1
+Itagui;2010;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;14,56
+Itagui;2009;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;11,47
+Itagui;2011;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;5,23
+Itagui;2011;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;18,78
+Itagui;2008;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;11,49
+Itagui;2015;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;16,7
+Itagui;2012;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;14,56
+Itagui;2014;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;10,41
+Itagui;2008;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;8,32
+Itagui;2016;Mujer;Menor de 5;Enfermedad respiratoria;Otras infecciones agudas de las vias respiratorias inferiores;1
+Itagui;2010;Hombre;Menor de 5;Enfermedad respiratoria;Influenza [gripe] y neumonia;1,04
+Itagui;2015;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;24,98
+Itagui;2017;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;23,97
+Itagui;2010;Mujer;Mayores de 65;Enfermedad respiratoria;Otras infecciones agudas de las vias respiratorias inferiores;3,13
+Itagui;2014;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;13,54
+Itagui;2013;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;21,78
+Itagui;2015;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;78,2
+Itagui;2010;Mujer;Menor de 5;Enfermedad circulatoria;Enfermedades cerebrovasculares;1,04
+Itagui;2011;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;73,99
+Itagui;2010;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;10,41
+Itagui;2013;Hombre;Menor de 5;Enfermedad respiratoria;Influenza [gripe] y neumonia;1
+Itagui;2012;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;77,14
+Itagui;2010;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;93,91
+Itagui;2017;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;10,44
+Itagui;2017;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;19,86
+Itagui;2016;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;26,06
+Itagui;2010;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;80,34
+Itagui;2016;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;13,55
+Itagui;2015;Hombre;Menor de 5;Enfermedad respiratoria;Influenza [gripe] y neumonia;1,04
+Itagui;2011;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;12,54
+Itagui;2016;Hombre;Menor de 5;Enfermedad respiratoria;Otras infecciones agudas de las vias respiratorias inferiores;2
+Itagui;2010;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;16,7
+Itagui;2013;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;70,93
+Itagui;2009;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;11,45
+Itagui;2013;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;70,94
+Itagui;2014;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;80,2
+Itagui;2016;Hombre;Menor de 5;Enfermedad circulatoria;Enfermedades cerebrovasculares;1,03
+Itagui;2008;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;62,59
+Itagui;2017;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;61,52
+Itagui;2008;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;18,76
+Itagui;2016;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;82,43
+Itagui;2011;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;96,91
+Itagui;2012;Mujer;Menor de 5;Enfermedad respiratoria;Influenza [gripe] y neumonia;1
+Itagui;2008;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;12,51
+Itagui;2013;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;39,42
+Itagui;2008;Mujer;Menor de 5;Enfermedad respiratoria;Otras infecciones agudas de las vias respiratorias inferiores;1
+Itagui;2008;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;60,51
+Itagui;2017;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;83,41
+Itagui;2016;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;12,48
+Itagui;2014;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;22,91
+Itagui;2013;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;18,74
+Itagui;2009;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;14,53
+Itagui;2015;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;21,95
+Itagui;2015;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;19,76
+Itagui;2009;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;47,95
+Itagui;2015;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;69,86
+Itagui;2017;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;43,85
+Itagui;2012;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;87,56
+Itagui;2010;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;11,42
+Itagui;2013;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;16,66
+Itagui;2012;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;20,76
+Itagui;2016;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;66,78
+Itagui;2016;Hombre;Menor de 5;Enfermedad respiratoria;Influenza [gripe] y neumonia;1,04
+Itagui;2014;Mujer;Menor de 5;Enfermedad respiratoria;Influenza [gripe] y neumonia;2,08
+Itagui;2014;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;14,65
+Itagui;2016;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;30,23
+Itagui;2009;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;15,59
+Itagui;2012;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;11,5
+Itagui;2014;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;67,72
+Itagui;2009;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;62,54
+La Estrella;2017;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;23,99
+La Estrella;2009;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;8,35
+La Estrella;2017;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;3,14
+La Estrella;2010;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;3,13
+La Estrella;2011;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;7,27
+La Estrella;2012;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;4,18
+La Estrella;2011;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;24,06
+La Estrella;2015;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;4,16
+La Estrella;2008;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;4,18
+La Estrella;2015;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;10,42
+La Estrella;2013;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;19,8
+La Estrella;2009;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;4,17
+La Estrella;2014;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;6,3
+La Estrella;2013;Mujer;Menor de 5;Enfermedad circulatoria;Enfermedades cerebrovasculares;1
+La Estrella;2014;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;13,59
+La Estrella;2012;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;10,48
+La Estrella;2014;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;19,87
+La Estrella;2014;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;4,23
+La Estrella;2010;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;14,67
+La Estrella;2017;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;20,86
+La Estrella;2015;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;14,65
+La Estrella;2013;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;6,21
+La Estrella;2017;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;8,34
+La Estrella;2013;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;2,08
+La Estrella;2012;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;4,2
+La Estrella;2016;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;19,88
+La Estrella;2013;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;3,15
+La Estrella;2008;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;2,09
+La Estrella;2011;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;10,46
+La Estrella;2009;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;3,13
+La Estrella;2016;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;6,27
+La Estrella;2011;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;2,08
+La Estrella;2012;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;4,16
+La Estrella;2010;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;5,22
+La Estrella;2011;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;3,15
+La Estrella;2010;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;2,08
+La Estrella;2012;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;2,09
+La Estrella;2008;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;20,92
+La Estrella;2014;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;2,08
+La Estrella;2010;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;17,81
+La Estrella;2009;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;9,39
+La Estrella;2013;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;4,15
+La Estrella;2012;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;25,14
+La Estrella;2010;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;4,2
+La Estrella;2015;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;5,21
+La Estrella;2017;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;8,3
+La Estrella;2016;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;18,81
+La Estrella;2011;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;4,16
+La Estrella;2016;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;8,36
+La Estrella;2015;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;10,47
+La Estrella;2016;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;4,18
+La Estrella;2009;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;11,48
+La Estrella;2008;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;2,11
+La Estrella;2017;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;3,13
+La Estrella;2008;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;7,31
+La Estrella;2013;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;13,55
+La Estrella;2016;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;4,18
+La Estrella;2008;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;28,25
+La Estrella;2015;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;3,13
+La Estrella;2014;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;5,23
+La Estrella;2009;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;3,14
+Medellin;2010;Hombre;Menor de 5;Enfermedad respiratoria;Influenza [gripe] y neumonia;8,29
+Medellin;2016;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;700,42
+Medellin;2015;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;631,62
+Medellin;2010;Hombre;Menor de 5;Enfermedad respiratoria;Infecciones agudas de las vias respiratorias superiores;1
+Medellin;2017;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;228,78
+Medellin;2013;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;654,83
+Medellin;2012;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;648,95
+Medellin;2010;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;643,22
+Medellin;2011;Hombre;Mayores de 65;Enfermedad respiratoria;Otras infecciones agudas de las vias respiratorias inferiores;1,03
+Medellin;2012;Hombre;Mayores de 65;Enfermedad respiratoria;Otras infecciones agudas de las vias respiratorias inferiores;1,04
+Medellin;2017;Hombre;Mayores de 65;Enfermedad respiratoria;Otras infecciones agudas de las vias respiratorias inferiores;2,07
+Medellin;2008;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;176,86
+Medellin;2009;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;178,7
+Medellin;2010;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;194,81
+Medellin;2011;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;166,65
+Medellin;2012;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;172,84
+Medellin;2011;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;614,24
+Medellin;2009;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;191,44
+Medellin;2017;Hombre;Menor de 5;Enfermedad circulatoria;Enfermedades cerebrovasculares;1,04
+Medellin;2015;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;196,88
+Medellin;2016;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;168,73
+Medellin;2009;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;561,38
+Medellin;2013;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;206,39
+Medellin;2014;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;211,41
+Medellin;2017;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;220,72
+Medellin;2008;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;550,31
+Medellin;2016;Hombre;Menor de 5;Enfermedad circulatoria;Enfermedades cerebrovasculares;1,04
+Medellin;2008;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;648,08
+Medellin;2017;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;172,79
+Medellin;2010;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;664,05
+Medellin;2013;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;115,67
+Medellin;2012;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;133,29
+Medellin;2010;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;144,69
+Medellin;2008;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;131,02
+Medellin;2016;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;111,41
+Medellin;2012;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;758,32
+Medellin;2014;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;745,47
+Medellin;2015;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;137,39
+Medellin;2009;Hombre;Menor de 5;Enfermedad circulatoria;Enfermedades cerebrovasculares;2,05
+Medellin;2015;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;697,29
+Medellin;2008;Hombre;Menor de 5;Enfermedad circulatoria;Enfermedades cerebrovasculares;2,06
+Medellin;2014;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;124,87
+Medellin;2012;Hombre;Menor de 5;Enfermedad circulatoria;Enfermedades cerebrovasculares;1,04
+Medellin;2009;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;613,46
+Medellin;2011;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;674,62
+Medellin;2013;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;739,18
+Medellin;2016;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;758,81
+Medellin;2017;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;876,15
+Medellin;2012;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;176,09
+Medellin;2013;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;223,46
+Medellin;2015;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;316,13
+Medellin;2016;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;337,81
+Medellin;2010;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;220,74
+Medellin;2009;Mujer;Menor de 5;Enfermedad respiratoria;Otras infecciones agudas de las vias respiratorias inferiores;1
+Medellin;2011;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;240,54
+Medellin;2011;Hombre;Menor de 5;Enfermedad circulatoria;Enfermedades cerebrovasculares;1,02
+Medellin;2013;Mujer;Menor de 5;Enfermedad respiratoria;Otras infecciones agudas de las vias respiratorias inferiores;1
+Medellin;2014;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;266,07
+Medellin;2016;Mujer;Menor de 5;Enfermedad respiratoria;Otras infecciones agudas de las vias respiratorias inferiores;2
+Medellin;2015;Hombre;Mayores de 65;Enfermedad respiratoria;Otras infecciones agudas de las vias respiratorias inferiores;2,06
+Medellin;2009;Hombre;Menor de 5;Enfermedad respiratoria;Otras infecciones agudas de las vias respiratorias inferiores;4
+Medellin;2017;Mujer;Menor de 5;Enfermedad respiratoria;Otras infecciones agudas de las vias respiratorias inferiores;3
+Medellin;2017;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;340,08
+Medellin;2015;Mujer;Menor de 5;Enfermedad respiratoria;Otras infecciones agudas de las vias respiratorias inferiores;1
+Medellin;2009;Mujer;Menor de 5;Enfermedad respiratoria;Influenza [gripe] y neumonia;11,38
+Medellin;2010;Mujer;Menor de 5;Enfermedad respiratoria;Otras infecciones agudas de las vias respiratorias inferiores;3
+Medellin;2009;Mujer;Mayores de 65;Enfermedad respiratoria;Otras infecciones agudas de las vias respiratorias inferiores;1,05
+Medellin;2012;Mujer;Menor de 5;Enfermedad respiratoria;Otras infecciones agudas de las vias respiratorias inferiores;1
+Medellin;2011;Mujer;Mayores de 65;Enfermedad respiratoria;Otras infecciones agudas de las vias respiratorias inferiores;4,12
+Medellin;2017;Mujer;Menor de 5;Enfermedad respiratoria;Influenza [gripe] y neumonia;1
+Medellin;2016;Mujer;Menor de 5;Enfermedad respiratoria;Influenza [gripe] y neumonia;1,04
+Medellin;2008;Hombre;Menor de 5;Enfermedad respiratoria;Influenza [gripe] y neumonia;14,45
+Medellin;2014;Mujer;Menor de 5;Enfermedad respiratoria;Influenza [gripe] y neumonia;3,08
+Medellin;2013;Mujer;Menor de 5;Enfermedad respiratoria;Influenza [gripe] y neumonia;3,12
+Medellin;2008;Mujer;Menor de 5;Enfermedad respiratoria;Influenza [gripe] y neumonia;11,4
+Medellin;2012;Mujer;Menor de 5;Enfermedad respiratoria;Influenza [gripe] y neumonia;8,24
+Medellin;2008;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;118,09
+Medellin;2010;Mujer;Menor de 5;Enfermedad respiratoria;Influenza [gripe] y neumonia;8,26
+Medellin;2015;Mujer;Menor de 5;Enfermedad respiratoria;Influenza [gripe] y neumonia;6,2
+Medellin;2011;Mujer;Menor de 5;Enfermedad respiratoria;Influenza [gripe] y neumonia;4,14
+Medellin;2017;Mujer;Menor de 5;Enfermedad circulatoria;Enfermedades cerebrovasculares;1,04
+Medellin;2015;Mujer;Menor de 5;Enfermedad circulatoria;Enfermedades cerebrovasculares;1,04
+Medellin;2008;Mujer;Mayores de 65;Enfermedad respiratoria;Otras infecciones agudas de las vias respiratorias inferiores;4,18
+Medellin;2008;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;186,44
+Medellin;2009;Mujer;Menor de 5;Enfermedad circulatoria;Enfermedades cerebrovasculares;3,1
+Medellin;2012;Mujer;Mayores de 65;Enfermedad respiratoria;Otras infecciones agudas de las vias respiratorias inferiores;4,17
+Medellin;2014;Mujer;Mayores de 65;Enfermedad respiratoria;Otras infecciones agudas de las vias respiratorias inferiores;1,01
+Medellin;2017;Mujer;Mayores de 65;Enfermedad respiratoria;Otras infecciones agudas de las vias respiratorias inferiores;1,04
+Medellin;2010;Hombre;Menor de 5;Enfermedad circulatoria;Enfermedades cerebrovasculares;1,04
+Medellin;2017;Hombre;Menor de 5;Enfermedad respiratoria;Otras infecciones agudas de las vias respiratorias inferiores;2
+Medellin;2016;Hombre;Menor de 5;Enfermedad respiratoria;Otras infecciones agudas de las vias respiratorias inferiores;3
+Medellin;2013;Hombre;Menor de 5;Enfermedad respiratoria;Otras infecciones agudas de las vias respiratorias inferiores;3
+Medellin;2015;Mujer;Mayores de 65;Enfermedad respiratoria;Otras infecciones agudas de las vias respiratorias inferiores;2,06
+Medellin;2009;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;129,82
+Medellin;2011;Hombre;Menor de 5;Enfermedad respiratoria;Otras infecciones agudas de las vias respiratorias inferiores;3,06
+Medellin;2015;Hombre;Menor de 5;Enfermedad respiratoria;Otras infecciones agudas de las vias respiratorias inferiores;5,02
+Medellin;2014;Hombre;Menor de 5;Enfermedad respiratoria;Otras infecciones agudas de las vias respiratorias inferiores;2
+Medellin;2012;Hombre;Menor de 5;Enfermedad respiratoria;Otras infecciones agudas de las vias respiratorias inferiores;4
+Medellin;2008;Hombre;Menor de 5;Enfermedad respiratoria;Otras infecciones agudas de las vias respiratorias inferiores;3
+Medellin;2017;Hombre;Menor de 5;Enfermedad respiratoria;Influenza [gripe] y neumonia;6,24
+Medellin;2011;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;116,65
+Medellin;2017;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;700,08
+Medellin;2015;Hombre;Menor de 5;Enfermedad respiratoria;Influenza [gripe] y neumonia;4,12
+Medellin;2014;Hombre;Menor de 5;Enfermedad respiratoria;Influenza [gripe] y neumonia;7,27
+Medellin;2011;Hombre;Mayores de 65;Enfermedad respiratoria;Infecciones agudas de las vias respiratorias superiores;2,11
+Medellin;2013;Hombre;Mayores de 65;Enfermedad respiratoria;Infecciones agudas de las vias respiratorias superiores;1,03
+Medellin;2016;Hombre;Mayores de 65;Enfermedad respiratoria;Infecciones agudas de las vias respiratorias superiores;1,02
+Medellin;2010;Hombre;Mayores de 65;Enfermedad respiratoria;Infecciones agudas de las vias respiratorias superiores;1,02
+Medellin;2015;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;189,28
+Medellin;2016;Hombre;Menor de 5;Enfermedad respiratoria;Influenza [gripe] y neumonia;3,1
+Medellin;2016;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;242,17
+Medellin;2013;Hombre;Menor de 5;Enfermedad respiratoria;Influenza [gripe] y neumonia;6,19
+Medellin;2010;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;157,52
+Medellin;2012;Hombre;Menor de 5;Enfermedad respiratoria;Influenza [gripe] y neumonia;8,2
+Medellin;2011;Hombre;Menor de 5;Enfermedad respiratoria;Influenza [gripe] y neumonia;10,35
+Medellin;2014;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;684,04
+Medellin;2014;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;197,46
+Medellin;2013;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;181,84
+Medellin;2009;Hombre;Menor de 5;Enfermedad respiratoria;Influenza [gripe] y neumonia;18,6
+Medellin;2012;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;141,93
+Medellin;2011;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;142,98
+Medellin;2009;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;155,13
+Sabaneta;2008;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;12,79
+Sabaneta;2014;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;2,14
+Sabaneta;2010;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;12,81
+Sabaneta;2009;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;1,05
+Sabaneta;2008;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;1,05
+Sabaneta;2012;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;10,64
+Sabaneta;2017;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;21,46
+Sabaneta;2015;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;4,25
+Sabaneta;2013;Hombre;Mayores de 65;Enfermedad respiratoria;Otras infecciones agudas de las vias respiratorias inferiores;1,08
+Sabaneta;2014;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;3,23
+Sabaneta;2011;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;4,26
+Sabaneta;2015;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;2,11
+Sabaneta;2015;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;7,43
+Sabaneta;2010;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;1,08
+Sabaneta;2017;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;7,57
+Sabaneta;2013;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;6,46
+Sabaneta;2012;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;3,24
+Sabaneta;2010;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;6,48
+Sabaneta;2012;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;3,22
+Sabaneta;2011;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;2,13
+Sabaneta;2008;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;7,49
+Sabaneta;2016;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;21,31
+Sabaneta;2016;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;6,46
+Sabaneta;2012;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;5,36
+Sabaneta;2013;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;2,15
+Sabaneta;2015;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;17,99
+Sabaneta;2014;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;9,63
+Sabaneta;2012;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;8,51
+Sabaneta;2014;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;4,28
+Sabaneta;2013;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;16,04
+Sabaneta;2011;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;7,49
+Sabaneta;2011;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;3,21
+Sabaneta;2011;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;6,41
+Sabaneta;2015;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;4,24
+Sabaneta;2010;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;8,54
+Sabaneta;2016;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;2,08
+Sabaneta;2013;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;10,69
+Sabaneta;2011;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;11,74
+Sabaneta;2008;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;12,78
+Sabaneta;2017;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;6,46
+Sabaneta;2016;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;12,74
+Sabaneta;2016;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;4,35
+Sabaneta;2010;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;5,36
+Sabaneta;2012;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;3,23
+Sabaneta;2010;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;2,13
+Sabaneta;2008;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;4,27
+Sabaneta;2017;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;27,9
+Sabaneta;2014;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;18,2
+Sabaneta;2015;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;7,51
+Sabaneta;2014;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;3,2
+Sabaneta;2013;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;5,42
+Sabaneta;2013;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;3,24
+Sabaneta;2017;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades cerebrovasculares;7,58
+Sabaneta;2017;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;7,57
+Sabaneta;2009;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;4,32
+Sabaneta;2009;Mujer;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;8,54
+Sabaneta;2016;Mujer;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;15,12
+Sabaneta;2008;Hombre;Mayores de 65;Enfermedad respiratoria;Influenza [gripe] y neumonia;1,06
+Sabaneta;2009;Hombre;Mayores de 65;Enfermedad circulatoria;Enfermedades isquemicas del corazon;6,4

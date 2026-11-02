@@ -15,7 +15,10 @@ Corresponde a la Fase 1 (Identificación de fuentes - dimensión ambiental):
 
 Detección de atípicos (respuesta a evaluadores)
 -------------------------------------------------
-    - Valores -999 (estaciones en mantenimiento) → se convierten a NULL
+    - Valores -999 (Representan ausencia de datos por datos invalidos, datos faltantes
+        o periodos anteriores o posteriores a la instalación de un equipo en una estación determinada 
+        https://siata.gov.co/Informes_Aire/131_InformeOperacion_Agosto2025/F-GAA-SIATA-RA-75_Informe_operacion_agosto2025_V2.pdf).
+        → se convierten a NULL
     - Valores PM2.5 < 0 → se convierten a NULL
     - Estaciones sin coordenadas → se conservan con lat/lon = NULL
 

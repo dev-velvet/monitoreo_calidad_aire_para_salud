@@ -5,8 +5,7 @@ Mapas de estandarización para municipios del Valle de Aburrá y grupos de edad.
 
 Relación con la metodología
 ---------------------------
-Estos diccionarios resuelven una de las observaciones de los evaluadores:
-"aclarar cómo se integran las estaciones con la información epidemiológica".
+Estos diccionarios aclaran cómo se integran las estaciones con la información epidemiológica.
 
 Los CSVs históricos contienen variantes ortográficas de los nombres de
 municipios y grupos de edad. Sin normalización, un JOIN entre las tablas

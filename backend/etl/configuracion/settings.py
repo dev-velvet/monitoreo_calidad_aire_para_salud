@@ -35,15 +35,16 @@ DB_NAME     = os.getenv("DB_NAME", "calidad_aire_salud")
 # RUTAS DE ARCHIVOS
 # ─────────────────────────────────────────────────────────────────────────────
 # BASE_DIR apunta a la carpeta backend/ (raíz del código fuente).
-# FUENTE_DATOS_DIR contiene los 4 CSVs históricos del portal de datos abiertos del AMVA.
+# DATOS_CRUDOS_DIR contiene los 4 CSVs históricos del portal de datos abiertos del AMVA,
+# organizados como anexos del proyecto.
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-FUENTE_DATOS_DIR = os.path.join(BASE_DIR, "fuente_datos")
+DATOS_CRUDOS_DIR = os.path.join(BASE_DIR, "anexos", "datos", "crudos")
 
-CSV_ANALISIS_RIESGO  = os.path.join(FUENTE_DATOS_DIR, "AnalisisRiesgo_20082017.csv")
-CSV_ENFERMEDADES     = os.path.join(FUENTE_DATOS_DIR, "EnfermedadesCalculadas_2008-2017.csv")
-CSV_TASA_MORTALIDAD  = os.path.join(FUENTE_DATOS_DIR, "TasaMortalidad_2008-2017.csv")
-CSV_DEFUNCIONES      = os.path.join(FUENTE_DATOS_DIR, "DefunsionesCalculadas_2008-2017.csv")
+CSV_ANALISIS_RIESGO  = os.path.join(DATOS_CRUDOS_DIR, "AnalisisRiesgo_20082017.csv")
+CSV_ENFERMEDADES     = os.path.join(DATOS_CRUDOS_DIR, "EnfermedadesCalculadas_2008-2017.csv")
+CSV_TASA_MORTALIDAD  = os.path.join(DATOS_CRUDOS_DIR, "TasaMortalidad_2008-2017.csv")
+CSV_DEFUNCIONES      = os.path.join(DATOS_CRUDOS_DIR, "DefunsionesCalculadas_2008-2017.csv")
 
 # ─────────────────────────────────────────────────────────────────────────────
 # API SIATA (FUENTE PRIMARIA — SENSOR EN TIEMPO REAL)
