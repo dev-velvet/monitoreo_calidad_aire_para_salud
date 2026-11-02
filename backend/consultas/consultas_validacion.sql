@@ -83,7 +83,7 @@ ORDER BY ph.promedio_casos_historico DESC;
 -- 5. VISTA MATERIALIZADA CONSOLIDADA (PASO FINAL DEL PIPELINE)
 -- ----------------------------------------------------------------------------
 -- La vista `vista_riesgo_integrado` se crea/refresca al final del ETL
--- con: SELECT db_postgres.crear_vista_datos_integracion(); (desde Python)
+-- con: etl.carga.vista_integrada.crear_vista_datos_integrados() (desde Python)
 -- Refresco manual si es necesario:
 --   REFRESH MATERIALIZED VIEW vista_riesgo_integrado;
 
