@@ -148,7 +148,7 @@ def _clasificar_ica(pm25):
 
     Umbrales (µg/m³):
         0-12    → Buena
-        13-37   → Aceptable
+        13-37   → Moderada
         38-55   → Dañina a la salud de grupos sensibles
         56-150  → Dañina para la salud
         151-250 → Muy dañina para la salud
@@ -160,7 +160,7 @@ def _clasificar_ica(pm25):
     if pm25 <= 12:
         return 'Buena'
     if pm25 <= 37:
-        return 'Aceptable'
+        return 'Moderada'
     if pm25 <= 55:
         return 'Dañina a la salud de grupos sensibles'
     if pm25 <= 150:

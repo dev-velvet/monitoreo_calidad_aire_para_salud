@@ -10,7 +10,7 @@ Transformaciones aplicadas (documentadas en perfilamiento_fuentes.md)
 2. Normalización de grupos de edad         → diccionarios.EDADES_MAPA
 3. Corrección de separadores decimales     → comas (,) → puntos (.)
 4. Filtro de valores de mantenimiento SIATA → -999 → NULL
-5. Clasificación de categoría ICA          → Buena / Aceptable / Dañina / ... (Res. 2254 de 2017)
+5. Clasificación de categoría ICA          → Buena / Moderada / Dañina / ... (Res. 2254 de 2017)
 6. Renombrado de columnas                 → snake_case para PostgreSQL
 7. Extracción de coordenadas geográficas   → latitud, longitud desde KML
 
