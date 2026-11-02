@@ -41,12 +41,7 @@ para la salud pública.
 ```text
 monitoreo_calidad_aire_para_salud/
 ├── README.md
-├── metodologia_reproducible.md        # Metodología reescrita (paper)
 ├── guia_explicacion_codigo.md         # Este documento
-├── plan_mejoramiento.md               # Plan de respuesta a evaluadores
-├── documento_evaluado.md              # Versión evaluada (no se modifica)
-├── comentarios_evaluadores.md         # Observaciones originales
-│
 └── backend/
     ├── etl/                           # Núcleo del pipeline (fases de la metodología)
     │   ├── __init__.py                # Mapa del paquete ETL
