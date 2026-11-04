@@ -140,12 +140,23 @@ def get_susceptibilidad():
     """
     Retorna el perfil de susceptibilidad epidemiológica: incremento porcentual de riesgo (ΔR)
     con intervalos de confianza del 95% ante incrementos de 10 µg/m³ de PM2.5,
-    desagregado por grupo etario y diagnóstico clínico.
+    desagregado por grupo etario y por diagnóstico clínico.
     """
-    query = """
+    query_edad = """
         SELECT 
-            ar.grupo_edad,
-            gd.nombre as grupo_diagnostico,
+            ar.grupo_edad as grupo,
+            ROUND(AVG(ar.porcentaje_incremento_riesgo), 2) as incremento_riesgo_pct,
+            ROUND(AVG(ar.limite_inferior), 2) as limite_inferior,
+            ROUND(AVG(ar.limite_superior), 2) as limite_superior
+        FROM analisis_riesgo ar
+        JOIN contaminantes c ON ar.contaminante_id = c.id
+        WHERE c.nombre ILIKE 'pm25' AND ar.grupo_edad IS NOT NULL
+        GROUP BY ar.grupo_edad
+        ORDER BY incremento_riesgo_pct DESC;
+    """
+    query_diag = """
+        SELECT 
+            gd.nombre as grupo,
             ROUND(AVG(ar.porcentaje_incremento_riesgo), 2) as incremento_riesgo_pct,
             ROUND(AVG(ar.limite_inferior), 2) as limite_inferior,
             ROUND(AVG(ar.limite_superior), 2) as limite_superior
@@ -153,14 +164,20 @@ def get_susceptibilidad():
         JOIN grupos_diagnosticos gd ON ar.grupo_diagnostico_id = gd.id
         JOIN contaminantes c ON ar.contaminante_id = c.id
         WHERE c.nombre ILIKE 'pm25'
-        GROUP BY ar.grupo_edad, gd.nombre
+        GROUP BY gd.nombre
         HAVING AVG(ar.porcentaje_incremento_riesgo) > 0
-        ORDER BY ar.grupo_edad, incremento_riesgo_pct DESC;
+        ORDER BY incremento_riesgo_pct DESC;
     """
     with get_db() as conn:
         with conn.cursor() as cur:
-            cur.execute(query)
-            return cur.fetchall()
+            cur.execute(query_edad)
+            res_edad = cur.fetchall()
+            cur.execute(query_diag)
+            res_diag = cur.fetchall()
+            return {
+                "por_edad": res_edad,
+                "por_diagnostico": res_diag
+            }
 
 @router.get("/riesgo-cruzado")
 def get_riesgo_cruzado(
