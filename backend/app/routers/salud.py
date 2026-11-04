@@ -160,9 +160,15 @@ def get_riesgo_cruzado(
                 elif "5 a 14" in ge_lower or "5-14" in ge_lower:
                     grupo_edad_normalizado = "5 a 14 años"
 
-            # 5. Obtener medición de PM2.5 del municipio
+            # 5. Obtener medición de PM2.5 del municipio (Promedio móvil 24 h + lectura puntual en vivo)
             cur.execute("""
-                SELECT pm25_actual, categoria_ica, estacion_siata
+                SELECT 
+                    pm25_promedio_24h,
+                    pm25_actual,
+                    n_lecturas_24h,
+                    categoria_ica,
+                    categoria_ica_actual,
+                    estacion_siata
                 FROM vista_riesgo_integrado 
                 WHERE municipio_id = %s 
                 LIMIT 1;
@@ -172,29 +178,55 @@ def get_riesgo_cruzado(
             nota_muni = None
             if medicion_res:
                 estacion_siata = medicion_res["estacion_siata"]
+                pm25_promedio_24h = float(medicion_res["pm25_promedio_24h"]) if medicion_res.get("pm25_promedio_24h") is not None else float(medicion_res["pm25_actual"])
                 pm25_actual = float(medicion_res["pm25_actual"])
+                n_lecturas_24h = int(medicion_res.get("n_lecturas_24h") or 1)
                 categoria_ica = medicion_res["categoria_ica"]
+                categoria_ica_actual = medicion_res.get("categoria_ica_actual") or categoria_ica
             else:
-                # Fallback: Promedio regional de todas las estaciones activas
+                # Fallback: Promedio regional de 24 horas y puntual de todas las estaciones activas
                 cur.execute("""
-                    WITH ultimas AS (
+                    WITH ventana_24h AS (
+                        SELECT pm25_ica
+                        FROM mediciones_siata
+                        WHERE pm25_ica IS NOT NULL AND pm25_ica >= 0
+                          AND fecha_hora >= (
+                              SELECT COALESCE(MAX(fecha_hora) - INTERVAL '24 hours', NOW() - INTERVAL '24 hours')
+                              FROM mediciones_siata
+                          )
+                    ),
+                    ultimas AS (
                         SELECT DISTINCT ON (estacion) pm25_ica
                         FROM mediciones_siata
                         WHERE pm25_ica IS NOT NULL
                         ORDER BY estacion, fecha_hora DESC
                     )
-                    SELECT AVG(pm25_ica) as promedio FROM ultimas;
+                    SELECT 
+                        (SELECT AVG(pm25_ica) FROM ventana_24h)   AS promedio_24h,
+                        (SELECT COUNT(pm25_ica) FROM ventana_24h) AS lecturas_24h,
+                        (SELECT AVG(pm25_ica) FROM ultimas)       AS promedio_actual;
                 """)
                 fallback_res = cur.fetchone()
-                pm25_actual = float(fallback_res["promedio"]) if fallback_res and fallback_res["promedio"] else 0.0
-                categoria_ica = clasificar_ica_pm25(pm25_actual)
-                estacion_siata = "Promedio Regional (Valle de Aburrá)"
-                nota_muni = f"No hay estaciones de monitoreo activas en {nombre_muni}. Se utiliza el promedio regional."
+                val_24h = fallback_res["promedio_24h"] if fallback_res and fallback_res.get("promedio_24h") is not None else (fallback_res.get("promedio_actual") if fallback_res else 0.0)
+                pm25_promedio_24h = float(val_24h) if val_24h is not None else 0.0
+                val_act = fallback_res.get("promedio_actual") if fallback_res and fallback_res.get("promedio_actual") is not None else pm25_promedio_24h
+                pm25_actual = float(val_act) if val_act is not None else 0.0
+                n_lecturas_24h = int(fallback_res.get("lecturas_24h") or 1) if fallback_res else 1
 
-            # 6. Obtener coeficientes de riesgo (beta)
+                categoria_ica = clasificar_ica_pm25(pm25_promedio_24h)
+                categoria_ica_actual = clasificar_ica_pm25(pm25_actual)
+                estacion_siata = "Promedio Regional (Valle de Aburrá)"
+                nota_muni = f"No hay estaciones de monitoreo activas en {nombre_muni}. Se utiliza el promedio regional de 24 horas."
+
+            # Advertencia de completitud temporal (<75% de lecturas esperadas en 24 h)
+            nota_cobertura = None
+            if n_lecturas_24h < 18:
+                nota_cobertura = f"Cobertura temporal parcial ({n_lecturas_24h}/24 horas analizadas)."
+
+            # 6. Obtener coeficientes de riesgo (beta) e intervalos de confianza del 95%
             # Primero intentamos con el municipio solicitado, sexo y grupo edad normalizados
             cur.execute("""
-                SELECT gd.nombre as enfermedad, ar.beta, ar.porcentaje_incremento_riesgo
+                SELECT gd.nombre as enfermedad, ar.beta, ar.limite_inferior, ar.limite_superior, ar.porcentaje_incremento_riesgo
                 FROM analisis_riesgo ar
                 JOIN grupos_diagnosticos gd ON ar.grupo_diagnostico_id = gd.id
                 WHERE ar.municipio_id = %s 
@@ -208,7 +240,7 @@ def get_riesgo_cruzado(
             # Si no hay datos, probar con Medellín (municipio de referencia)
             if not filas_coef:
                 cur.execute("""
-                    SELECT gd.nombre as enfermedad, ar.beta, ar.porcentaje_incremento_riesgo
+                    SELECT gd.nombre as enfermedad, ar.beta, ar.limite_inferior, ar.limite_superior, ar.porcentaje_incremento_riesgo
                     FROM analisis_riesgo ar
                     JOIN grupos_diagnosticos gd ON ar.grupo_diagnostico_id = gd.id
                     WHERE ar.municipio_id = %s 
@@ -222,7 +254,7 @@ def get_riesgo_cruzado(
             # Si todavía no hay datos, probar con 'Ambos sexos' y 'Mayores de 65 años' en Medellín
             if not filas_coef:
                 cur.execute("""
-                    SELECT gd.nombre as enfermedad, ar.beta, ar.porcentaje_incremento_riesgo
+                    SELECT gd.nombre as enfermedad, ar.beta, ar.limite_inferior, ar.limite_superior, ar.porcentaje_incremento_riesgo
                     FROM analisis_riesgo ar
                     JOIN grupos_diagnosticos gd ON ar.grupo_diagnostico_id = gd.id
                     WHERE ar.municipio_id = %s 
@@ -233,16 +265,37 @@ def get_riesgo_cruzado(
                 if filas_coef:
                     nota_coef = f"Se utilizan coeficientes genéricos de referencia para {nombre_muni}."
 
-            # 7. Calcular los incrementos de riesgo para cada enfermedad usando el PM2.5 real/promedio
+            # 7. Calcular los incrementos de riesgo basados en el promedio de 24 horas y propagar IC 95%
             calculos = []
+            pm25_exposicion = pm25_promedio_24h if pm25_promedio_24h > 0 else pm25_actual
             for f in filas_coef:
                 beta = float(f["beta"])
-                # Fórmula estándar epidemiológica: incremento por cada incremento en PM2.5 (per-10µg/m³)
-                inc_pct = round((math.exp(beta * (pm25_actual / 10.0)) - 1) * 100, 2)
+                # Fórmula estándar epidemiológica alimentada por la exposición de 24 h (GAM-Poisson):
+                # ΔR = (exp(β × PM2.5_24h / 10) - 1) × 100
+                inc_pct_24h = round((math.exp(beta * (pm25_exposicion / 10.0)) - 1) * 100, 2)
+                # Cálculo comparativo puntual instantáneo (informativo):
+                inc_pct_instantaneo = round((math.exp(beta * (pm25_actual / 10.0)) - 1) * 100, 2)
+
+                # Propagación de intervalos de confianza del 95%
+                inc_pct_inf = None
+                inc_pct_sup = None
+                if f.get("limite_inferior") and f.get("limite_superior"):
+                    try:
+                        lim_inf = float(f["limite_inferior"])
+                        lim_sup = float(f["limite_superior"])
+                        inc_pct_inf = round((math.pow(lim_inf, pm25_exposicion / 10.0) - 1) * 100, 2)
+                        inc_pct_sup = round((math.pow(lim_sup, pm25_exposicion / 10.0) - 1) * 100, 2)
+                    except (ValueError, OverflowError):
+                        pass
+
                 calculos.append({
                     "enfermedad": f["enfermedad"],
                     "beta_historico": beta,
-                    "incremento_riesgo_porcentaje_actual": inc_pct,
+                    "incremento_riesgo_porcentaje_actual": inc_pct_24h, # retrocompatibilidad
+                    "incremento_riesgo_porcentaje_24h": inc_pct_24h,
+                    "incremento_riesgo_porcentaje_instantaneo": inc_pct_instantaneo,
+                    "incremento_riesgo_inf": inc_pct_inf,
+                    "incremento_riesgo_sup": inc_pct_sup,
                     "incremento_historico_base": float(f["porcentaje_incremento_riesgo"])
                 })
 
@@ -250,19 +303,21 @@ def get_riesgo_cruzado(
             calculos.sort(key=lambda x: x["incremento_riesgo_porcentaje_actual"], reverse=True)
 
             # Compilar nota explicativa
-            notas = [n for n in [nota_muni, nota_coef] if n]
+            notas = [n for n in [nota_muni, nota_coef, nota_cobertura] if n]
             if grupo_edad != grupo_edad_normalizado:
-                # Si el usuario ingresó un grupo de edad para el que no tenemos coeficientes (ej. 15-64)
-                # se le avisa que se usó el grupo de referencia (ej. Mayores de 65 años)
                 notas.append(f"Estimación adaptada usando el grupo etario '{grupo_edad_normalizado}' (referencia de adultos).")
             
-            nota_estimacion = " | ".join(notas) if notas else "Estimación personalizada basada en datos locales y coeficientes epidemiológicos."
+            nota_estimacion = " | ".join(notas) if notas else "Estimación poblacional atribuible calculada con promedio móvil de 24 horas y coeficientes epidemiológicos."
 
             return {
                 "municipio": nombre_muni,
                 "estacion_monitoreo": estacion_siata,
+                "pm25_promedio_24h": pm25_promedio_24h,
                 "pm25_ica_actual": pm25_actual,
+                "n_lecturas_24h": n_lecturas_24h,
+                "metrica_exposicion": "Promedio móvil de 24 horas",
                 "categoria_ica": categoria_ica,
+                "categoria_ica_actual": categoria_ica_actual,
                 "sexo_filtro": sexo,
                 "grupo_edad_filtro": grupo_edad,
                 "calculos_riesgo": calculos,
