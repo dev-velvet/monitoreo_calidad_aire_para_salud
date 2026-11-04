@@ -55,6 +55,7 @@ from etl.carga.hechos import (
     cargar_defunciones,
 )
 from etl.carga.siata import cargar_mediciones_siata
+from etl.transformacion.asignacion_municipio import asignar_municipio
 from etl.carga.vista_integrada import crear_vista_datos_integrados
 
 
@@ -156,6 +157,8 @@ def ejecutar_pipeline_completo():
         # ── 3.3 Datos en tiempo real (API SIATA con UPSERT) ───────────
         print("\n--- Cargando datos de API SIATA (Tiempo Real) ---")
         df_siata = extraer_siata()
+        # Asignar municipio de forma robusta (fallback geográfico)
+        df_siata = asignar_municipio(df_siata)
         cargar_mediciones_siata(conn, df_siata)
 
         # ── 3.4 Crear/Refrescar vista materializada de integración ─────
