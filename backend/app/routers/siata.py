@@ -39,6 +39,15 @@ def get_siata_actual():
             u.fecha_hora, 
             u.latitud, 
             u.longitud, 
+            u.categoria_ica AS categoria_ica_actual,
+            CASE
+                WHEN COALESCE(p.pm25_promedio_24h, u.pm25_ica) <= 12 THEN 'Buena'
+                WHEN COALESCE(p.pm25_promedio_24h, u.pm25_ica) <= 37 THEN 'Moderada'
+                WHEN COALESCE(p.pm25_promedio_24h, u.pm25_ica) <= 55 THEN 'Dañina a grupos sensibles'
+                WHEN COALESCE(p.pm25_promedio_24h, u.pm25_ica) <= 150 THEN 'Dañina'
+                WHEN COALESCE(p.pm25_promedio_24h, u.pm25_ica) <= 250 THEN 'Muy dañina'
+                ELSE 'Peligrosa'
+            END AS categoria_ica_24h,
             u.categoria_ica, 
             u.fecha_carga
         FROM ultimas u
