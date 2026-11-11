@@ -10,7 +10,11 @@ from contextlib import contextmanager
 from dotenv import load_dotenv
 
 # Cargar .env si existe (desarrollo local); en Render se ignora y usa env vars directas
-load_dotenv()
+_backend_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+_env_path = os.path.join(_backend_dir, ".env")
+if os.path.exists(_env_path):
+    load_dotenv(_env_path)
+load_dotenv()  # Fallback a cwd
 
 DATABASE_URL = os.getenv("DATABASE_URL", "")
 

@@ -20,11 +20,16 @@ app = FastAPI(
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "http://localhost:5173",  # Local Vite / Lovable sandbox
+        "http://localhost:5173",
+        "http://127.0.0.1:5173",
         "http://localhost:3000",
-        "https://*.lovable.app",  # Wildcard para dominios de Lovable
+        "http://127.0.0.1:3000",
+        "http://localhost:4173",
+        "http://127.0.0.1:4173",
+        "http://localhost:8080",
+        "https://*.lovable.app",
         "https://lovable.app",
-        "https://airwise-health.onrender.com", # Frontend desplegado en Render
+        "https://airwise-health.onrender.com",
     ],
     allow_credentials=True,
     allow_methods=["*"],
